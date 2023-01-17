@@ -1,0 +1,122 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: black;
+    background-color: #fff;
+}
+ul,li,ol {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    margin:10px 10px;
+    font-size: .9rem;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-list > li {
+    padding-right: 15px;
+}
+.nav-links{
+    color: black;
+}
+.nav-links:hover{
+    text-decoration: underline;
+}
+.user-photo{
+    height: 100%;
+    width: 100%;
+    border: 5px solid transparent;
+    border-radius: 100px;
+    
+}
+.icon-apps{
+    color: #5f6368;
+    padding: 12px;
+    border-radius: 100px;
+}
+.icon-apps:hover,.user-photo:hover{
+    background-color: rgba(214, 212, 212, 0.4);
+}
+
+.main-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero-image{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.image{
+    width: 300px;
+    height: 100px;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+.input-container,.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-container{
+    border: .3px solid rgb(201, 200, 200);
+    border-radius: 50px;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+.icon-search{
+    color: rgba(138, 137, 137, 0.6);
+    cursor: default;
+    font-size: 16px
+}
+.svg-icon {
+    cursor: pointer;
+    margin-right: 10px;
+    height: 30px;
+    width: 30px;
+}
+.form-input{
+    background-color: transparent;
+    border-color: transparent;
+    width: 30vw;
+    padding: 10px 15px;
+    border-width: 0;
+}
+.form-input:focus{
+    border-color: transparent;
+}
+
+.button-container{
+    padding: 30px;
+}
+.form-btn:first-child{
+    margin-right: 10px;
+}
+.form-btn{
+    cursor: pointer;
+    border-color: transparent;
+    background-color: #f0f0f0a2;
+    font-weight: 100;
+    font-size: .9rem;
+    padding: 10px 10px;
+}
+.form-btn:hover{
+    border: .3px solid rgb(201, 200, 200);
+    border-radius: 5px;
+}
