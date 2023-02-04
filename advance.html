@@ -5,28 +5,220 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="advance.css">
     <title>Google Advance Search</title>
 </head>
 <body>
-    <nav>
-        <ul class="nav-container">
-            <div>
-                <img class="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google logo">
-            </div>
-            <div class="nav-list">
-                <li><a href="https://www.google.com.ng/intl/en/about/products" >
-                    <span class="material-icons icon-apps">apps</span>
-                    </a>
-                </li>
-                <li><a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/"><img src="Profile picture.png" class="user-photo " alt="User Photo"></a></li>
-            
-            </div>
-        </ul>
-    </nav>
-    <main>
+    <header>
+        <nav>
+            <ul class="nav-container">
+                <div>
+                    <img class="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google logo">
+                </div>
+                <div class="nav-list">
+                    <li><a href="https://www.google.com.ng/intl/en/about/products" >
+                        <span class="material-icons icon-apps">apps</span>
+                        </a>
+                    </li>
+                    <li><a href="https://accounts.google.com/SignOutOptions?hl=en&continue=https://www.google.com/"><img src="Profile picture.png" class="user-photo " alt="User Photo"></a></li>
+                
+                </div>
+            </ul>
+        </nav>
         <h1>Advanced Search</h1>
+        <hr>
+    </header>
+    <main>
+        <form action="https://google.com/search" >
+            <section>
+                <div class="main-text">
+                    <p class="label">Find pages with...</p>
+                    <div class="blank"></div>
+                    <p class="dis-text">To do this in the search box.</p>
+                </div>
+                <div class="input-row">
+                    <p class="label">all these words:</p>
+                    <div class="blank">
+                        <input type="text" name="as_q" >
+                    </div>
+                    <p class="dis-text">Type the important words: tri-colour rat terrier</p>
+                </div>
+                <div class="input-row">
+                    <p class="label">this exact word or phrase:</p>
+                    <div class="blank">
+                        <input type="text" name="as_epq" >
+                    </div>
+                    <p class="dis-text">Put exact words in quotes: "rat terrier"</p>
+                </div>
+                <div class="input-row">
+                    <p class="label">any of these words:</p>
+                    <div class="blank">
+                        <input type="text" name="as_oq" >
+                    </div>
+                    <p class="dis-text">Type OR between all the words you want: miniature OR standard</p>
+                </div>
+                <div class="input-row">
+                    <p class="label">none of these words:</p>
+                    <div class="blank">
+                        <input type="text" name="as_eq" >
+                    </div>
+                    <p class="dis-text">none of these words:
+                        Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"</p>
+                </div>
+                <div class="input-row">
+                    <p class="label">numbers ranging from:</p>
+                    <div class="blank">
+                        <div class="blank-2">
+                            <input type="text" name="as_nlo" >
+                            <p>to</p>
+                            <input type="text" name="as_nhi" >
+                        </div>
+                    </div>
+                    <p class="dis-text">Put two full stops between the numbers and add a unit of measurement: 10..35 kg, £300..£500, 2010..2011</p>
+                </div>
+        
+            </section>
+            <hr>
+            <section>
+                <div class="main-text">
+                    <p class="label">Then narrow your results by...</p>
+                    <div class="blank"></div>
+                    <p class="dis-text"></p>
+                </div>
+                <div class="input-row">
+                    <p class="label">language:</p>
+                    <div class="blank">
+                        <select name="" >
+                            <option>any language</option>
+                            <option value="English">Nigeria</option>
+                        </select>
+                    </div>
+                    <p class="dis-text">Find pages in the language that you select.</p>
+                </div>
+                <div class="input-row">
+                    <p class="label">region:</p>
+                    <div class="blank">
+                        <select name="" >
+                            <option >any region</option>
+                            <option value="English">English</option>
+                        </select>
+                    </div>
+                    <p class="dis-text">Find pages published in a particular region.</p>
+                </div>
+                <div class="input-row">
+                    <p class="label">last update:</p>
+                    <div class="blank">
+                        <select name="" >
+                            <option >anytime</option>
+                            <option value="24hrs">past 24 hours</option>
+                            <option value="">past week</option>
+                            <option value="">past month</option>
+                            <option value="">past year</option>
+                        </select>
+                    </div>
+                    <p class="dis-text">Find pages updated within the time that you specify.</p>
+                </div>
+
+                <div class="input-row">
+                    <p class="label">site or domain:</p>
+                    <div class="blank">
+                        <input type="text" name="" >
+                    </div>
+                    <p class="dis-text">Search one site (like wikipedia.org ) or limit your results to a domain like .edu, .org or .gov</p>
+                </div>
+
+                <div class="input-row">
+                    <p class="label">terms appearing:</p>
+                    <div class="blank">
+                        <select name="" >
+                            <option >anywhere in the page</option>
+                            <option value="">in the title of the page</option>
+                            <option value="">in the text of the page</option>
+                            <option value="">in the URL of the page</option>
+                            <option value="">in links to the page</option>
+                        </select>
+                    </div>
+                    <p class="dis-text">terms appearing:
+                        Search for terms in the whole page, page title or web address, or links to the page you're looking for.
+                        </p>
+                </div>
+                <div class="input-row">
+                    <p class="label"><a href="https://support.google.com/websearch?p=adv_safesearch&hl=en">SafeSearch:</a></p>
+                    <div class="blank">
+                        <select name="" >
+                            <option >show explicit results</option>
+                            <option value="">hide explicit results</option>
+                        </select>
+                    </div>
+                    <p class="dis-text">Tell <a href="https://support.google.com/websearch?p=adv_safesearch&hl=en">SafeSearch:</a> whether to filter sexually explicit content.</p>
+                </div>
+                <div class="input-row">
+                    <p class="label">file type:</p>
+                    <div class="blank">
+                        <select name="" >
+                            <option >any format</option>
+                            <option value="">Adobe Acrobat PDF (.pdf)</option>
+                            <option value="">Adobe Postscript (.ps)</option>
+                            <option value="">Autodesk DWF (.dwf)</option>
+                            <option value="">Google Earth KML (.kml)</option>
+                            <option value="">Google Earth KMZ (.kmz)</option>
+                            <option value="">Microsoft Excel (.xls)</option>
+                            <option value="">Microsoft PowerPoint (.ppt)</option>
+                            <option value="">Microsoft Word (.doc)</option>
+                            <option value="">Rich Text Format (.rtf)</option>
+                            <option value="">Shockwave Flash (.swf)</option>
+                        </select>
+                    </div>
+                    <p class="dis-text">Find pages in the format that you prefer.</p>
+                </div>
+                <div class="input-row">
+                    <p class="label"><a href="https://support.google.com/websearch?p=ws_images_usagerights&hl=en">usage rights:</a></p>
+                    <div class="blank">
+                        <select name="" >
+                            <option >not filtered by licence</option>
+                            <option value="">free to use or share</option>
+                            <option value="">free to use or share, even commercially</option>
+                            <option value="">free to use share or modify</option>
+                            <option value="">free to use, share or modify, even commercially</option>
+                        </select>
+                    </div>
+                    <p class="dis-text">Find pages that you are free to use yourself.</p>
+                </div>
+                <div class="input-row">
+                    <p class="label"></p>
+                    <div class="blank">
+                        <div class="blank-2" style="justify-content: space-between;">
+                            <div style="width: 100%;"><input style="display: none;" type="text" name=""></div>
+                            <input style="width: fit-content;" type="submit" name="Advanced Search" value="Advanced Search" >
+                        </div>
+                    </div>
+                    <p class="dis-text"></p>
+                </div>
+            </section>
+            <center>
+                <hr style="width: 94%;">
+            </center>
+        </form>
     </main>
+    <footer>
+        <div class="links-container">
+            <p class="footer-text" style="font-size: 1rem;">You can also...</p>
+            <a href="https://support.google.com/websearch?p=adv_pages_similar&hl=en">Find pages that are similar to a URL</a>
+            <a href="https://support.google.com/websearch?p=adv_pages_visited&hl=en">Search pages that you've visited</a>
+            <a href="https://support.google.com/websearch?p=adv_operators&hl=en">Use operators in the search box</a>
+            <a href="https://www.google.com.ng/preferences?hl=en-NG">Customise your search settings</a>
+        </div>
+        <div class="footer-links-container">
+            <div class="final-text">
+                <p>Nigeria</p>
+            </div>
+            <div class="final-links" style="flex-basis: 20%;">
+                <a href="">Help</a>
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
